@@ -13,7 +13,7 @@ def solution(p: float, x: np.array) -> tuple:
     a = 0.095
     n = len(x)
     x_max = x.max()
-    alpha = (1 - p)**(1./n)
+    alpha = (p)**(1./n)
     left = x_max
     right= (x_max - a) / alpha + a
     return (left, right)
